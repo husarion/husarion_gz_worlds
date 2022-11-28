@@ -51,12 +51,12 @@
     <model name="husarion">
       <static>true</static>
       <link name="link">
-        <pose>11.0 8.0 0 0 0 -1.57</pose>
+        <pose>13.0 16.0 0 0 0 -1.57</pose>
         <visual name="visual">
           <geometry>
             <mesh>
               <uri>meshes/husarion_world.dae</uri>
-              <scale>3.0 3.0 3.0</scale>
+              <scale>6.0 6.0 6.0</scale>
             </mesh>
           </geometry>
         </visual>
@@ -64,7 +64,7 @@
           <geometry>
             <mesh>
               <uri>meshes/husarion_world.dae</uri>
-              <scale>3.0 3.0 3.0</scale>
+              <scale>6.0 6.0 6.0</scale>
             </mesh>
           </geometry>
         </collision>
