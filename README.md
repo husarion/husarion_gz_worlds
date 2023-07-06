@@ -1,4 +1,4 @@
-# gazebo_worlds
+# husarion_office_gz
 Custom made gazebo worlds
 
 # Husarion office world 
@@ -8,7 +8,7 @@ Prepare workspace and run Gazebo:
 ```bash
 mkdir -p ~/ros2_ws/src
 cd ~/ros2_ws/src
-git clone https://github.com/husarion/gazebo_worlds.git
+git clone https://github.com/husarion/husarion_office_gz.git
 git clone -b foxy https://github.com/husarion/rosbot_description.git
 
 cd ~/ros2_ws
