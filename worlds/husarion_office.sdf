@@ -32,7 +32,7 @@
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
-      <floor name='L1' model_name='pradnicka_office_L1'>
+      <floor name='L1' model_name='Surfaces'>
         <model name='OpenRobotics/AdjTable'/>
         <model name='OpenRobotics/AdjTable_2'/>
         <model name='OpenRobotics/AdjTable_3'/>
@@ -187,7 +187,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Door/meshes/door.stl</uri>
+              <uri>model://Door/meshes/door.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -215,7 +215,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Door/meshes/door.stl</uri>
+              <uri>model://Door/meshes/door.stl</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -448,7 +448,7 @@
       </link>
       <pose>1.18944 -7.00774 0 0 -0 0</pose>
     </model>
-    <model name='OpenRobotics/ConfTable'>
+    <model name='OpenRobotics/ConferenceTable'>
       <static>1</static>
       <link name='link'>
         <inertial>
@@ -459,7 +459,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/ConfTable/meshes/ConfTable2.stl</uri>
+              <uri>model://ConferenceTable/meshes/ConferenceTable.stl</uri>
               <scale>0.016 0.013 0.01</scale>
             </mesh>
           </geometry>
@@ -487,7 +487,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/ConfTable/meshes/ConfTable2.stl</uri>
+              <uri>model://ConferenceTable/meshes/ConferenceTable.stl</uri>
               <scale>0.016 0.013 0.01</scale>
             </mesh>
           </geometry>
@@ -509,7 +509,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Tv/meshes/tv.stl</uri>
+              <uri>model://Tv/meshes/tv.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -537,7 +537,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Tv/meshes/tv.stl</uri>
+              <uri>model://Tv/meshes/tv.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -559,7 +559,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/WaterDispenser/meshes/WaterDispenser.dae</uri>
+              <uri>model://WaterDispenser/meshes/WaterDispenser.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -581,7 +581,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/WaterDispenser/meshes/WaterDispenser.dae</uri>
+              <uri>model://WaterDispenser/meshes/WaterDispenser.dae</uri>
               <scale>1 1 1</scale>
             </mesh>
           </geometry>
@@ -603,7 +603,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Kitchen/meshes/kitchen.stl</uri>
+              <uri>model://Kitchen/meshes/kitchen.stl</uri>
               <scale>0.0005 0.0005 0.0005</scale>
             </mesh>
           </geometry>
@@ -625,7 +625,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Kitchen/meshes/kitchen.stl</uri>
+              <uri>model://Kitchen/meshes/kitchen.stl</uri>
               <scale>0.0005 0.0005 0.0005</scale>
             </mesh>
           </geometry>
@@ -681,7 +681,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/box.dae</uri>
+              <uri>model://Rosbot/meshes/box.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -730,7 +730,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/upper.dae</uri>
+              <uri>model://Rosbot/meshes/upper.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -762,7 +762,7 @@
           <pose>0 0 0 0 -0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -844,7 +844,7 @@
           <pose>0 0 0 0 0 -1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -926,7 +926,7 @@
           <pose>0 0 0 0 -0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1009,7 +1009,7 @@
           <pose>0 0 0 0 0 -1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1109,7 +1109,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/astra.dae</uri>
+              <uri>model://Rosbot/meshes/astra.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1158,7 +1158,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/rplidar.dae</uri>
+              <uri>model://Rosbot/meshes/rplidar.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1324,7 +1324,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/box.dae</uri>
+              <uri>model://Rosbot/meshes/box.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1373,7 +1373,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/upper.dae</uri>
+              <uri>model://Rosbot/meshes/upper.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1405,7 +1405,7 @@
           <pose>0 0 0 0 -0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1487,7 +1487,7 @@
           <pose>0 0 0 0 0 -1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1569,7 +1569,7 @@
           <pose>0 0 0 0 -0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1652,7 +1652,7 @@
           <pose>0 0 0 0 0 -1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1752,7 +1752,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/astra.dae</uri>
+              <uri>model://Rosbot/meshes/astra.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1801,7 +1801,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/rplidar.dae</uri>
+              <uri>model://Rosbot/meshes/rplidar.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -1966,7 +1966,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/box.dae</uri>
+              <uri>model://Rosbot/meshes/box.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2015,7 +2015,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/upper.dae</uri>
+              <uri>model://Rosbot/meshes/upper.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2047,7 +2047,7 @@
           <pose>0 0 0 0 -0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2129,7 +2129,7 @@
           <pose>0 0 0 0 0 -1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2211,7 +2211,7 @@
           <pose>0 0 0 0 -0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2294,7 +2294,7 @@
           <pose>0 0 0 0 0 -1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/wheel.dae</uri>
+              <uri>model://Rosbot/meshes/wheel.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2394,7 +2394,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/astra.dae</uri>
+              <uri>model://Rosbot/meshes/astra.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2443,7 +2443,7 @@
           <pose>0 0 0 1.5707 0 1.5707</pose>
           <geometry>
             <mesh>
-              <uri>models/rosbot/meshes/rplidar.dae</uri>
+              <uri>model://Rosbot/meshes/rplidar.dae</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2575,7 +2575,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2603,7 +2603,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2625,7 +2625,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2653,7 +2653,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2675,7 +2675,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2703,7 +2703,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2725,7 +2725,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2753,7 +2753,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2775,7 +2775,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2803,7 +2803,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2825,7 +2825,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2853,7 +2853,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2875,7 +2875,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2903,7 +2903,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2925,7 +2925,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2953,7 +2953,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -2975,7 +2975,7 @@
           <pose>0 0 0 0 -0 0</pose>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -3003,7 +3003,7 @@
           </material>
           <geometry>
             <mesh>
-              <uri>models/Laptop/meshes/laptop.stl</uri>
+              <uri>model://Laptop/meshes/laptop.stl</uri>
               <scale>0.001 0.001 0.001</scale>
             </mesh>
           </geometry>
@@ -6666,13 +6666,13 @@
         <pose>0.199822 0 0 0 -0 0</pose>
       </joint>
     </model>
-    <model name='pradnicka_office_L1'>
+    <model name='Surfaces'>
       <static>1</static>
       <link name='floor_1'>
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_1.obj</uri>
+              <uri>model://Surfaces/meshes/floor_1.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6681,11 +6681,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/wood1.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/wood1.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_1_Diffuse</name>
             </script>
           </material>
@@ -6693,7 +6693,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_1.obj</uri>
+              <uri>model://Surfaces/meshes/floor_1.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -6719,7 +6719,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_2.obj</uri>
+              <uri>model://Surfaces/meshes/floor_2.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6728,11 +6728,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_carpet.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_2_Diffuse</name>
             </script>
           </material>
@@ -6740,7 +6740,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_2.obj</uri>
+              <uri>model://Surfaces/meshes/floor_2.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -6766,7 +6766,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_3.obj</uri>
+              <uri>model://Surfaces/meshes/floor_3.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6775,11 +6775,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_carpet.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_3_Diffuse</name>
             </script>
           </material>
@@ -6787,7 +6787,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_3.obj</uri>
+              <uri>model://Surfaces/meshes/floor_3.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -6813,7 +6813,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_4.obj</uri>
+              <uri>model://Surfaces/meshes/floor_4.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6822,11 +6822,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/black_concrete.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/black_concrete.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_4_Diffuse</name>
             </script>
           </material>
@@ -6834,7 +6834,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_4.obj</uri>
+              <uri>model://Surfaces/meshes/floor_4.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -6860,7 +6860,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_5.obj</uri>
+              <uri>model://Surfaces/meshes/floor_5.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6869,11 +6869,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_tiles.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_5_Diffuse</name>
             </script>
           </material>
@@ -6881,7 +6881,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_5.obj</uri>
+              <uri>model://Surfaces/meshes/floor_5.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -6907,7 +6907,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_6.obj</uri>
+              <uri>model://Surfaces/meshes/floor_6.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6916,11 +6916,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_tiles.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_6_Diffuse</name>
             </script>
           </material>
@@ -6928,7 +6928,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_6.obj</uri>
+              <uri>model://Surfaces/meshes/floor_6.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -6954,7 +6954,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_7.obj</uri>
+              <uri>model://Surfaces/meshes/floor_7.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -6963,11 +6963,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_tiles.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_7_Diffuse</name>
             </script>
           </material>
@@ -6975,7 +6975,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_7.obj</uri>
+              <uri>model://Surfaces/meshes/floor_7.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7001,7 +7001,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_8.obj</uri>
+              <uri>model://Surfaces/meshes/floor_8.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7010,11 +7010,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_carpet.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_8_Diffuse</name>
             </script>
           </material>
@@ -7022,7 +7022,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_8.obj</uri>
+              <uri>model://Surfaces/meshes/floor_8.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7048,7 +7048,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_9.obj</uri>
+              <uri>model://Surfaces/meshes/floor_9.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7057,11 +7057,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/wood1.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/wood1.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_9_Diffuse</name>
             </script>
           </material>
@@ -7069,7 +7069,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_9.obj</uri>
+              <uri>model://Surfaces/meshes/floor_9.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7095,7 +7095,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_10.obj</uri>
+              <uri>model://Surfaces/meshes/floor_10.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7104,11 +7104,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_carpet.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_10_Diffuse</name>
             </script>
           </material>
@@ -7116,7 +7116,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_10.obj</uri>
+              <uri>model://Surfaces/meshes/floor_10.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7142,7 +7142,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_11.obj</uri>
+              <uri>model://Surfaces/meshes/floor_11.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7151,11 +7151,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/wood1.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/wood1.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_11_Diffuse</name>
             </script>
           </material>
@@ -7163,7 +7163,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_11.obj</uri>
+              <uri>model://Surfaces/meshes/floor_11.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7189,7 +7189,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_12.obj</uri>
+              <uri>model://Surfaces/meshes/floor_12.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7198,11 +7198,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_carpet.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_carpet.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_12_Diffuse</name>
             </script>
           </material>
@@ -7210,7 +7210,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_12.obj</uri>
+              <uri>model://Surfaces/meshes/floor_12.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7236,7 +7236,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_13.obj</uri>
+              <uri>model://Surfaces/meshes/floor_13.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7245,11 +7245,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_tiles.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_tiles.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_13_Diffuse</name>
             </script>
           </material>
@@ -7257,7 +7257,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_13.obj</uri>
+              <uri>model://Surfaces/meshes/floor_13.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7283,7 +7283,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_14.obj</uri>
+              <uri>model://Surfaces/meshes/floor_14.obj</uri>
             </mesh>
           </geometry>
           <material>
@@ -7292,11 +7292,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/black_concrete.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/black_concrete.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>floor_14_Diffuse</name>
             </script>
           </material>
@@ -7304,7 +7304,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/floor_14.obj</uri>
+              <uri>model://Surfaces/meshes/floor_14.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7330,7 +7330,7 @@
         <visual name='wall_1'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/wall_1.obj</uri>
+              <uri>model://Surfaces/meshes/wall_1.obj</uri>
             </mesh>
           </geometry>
           <transparency>0</transparency>
@@ -7340,11 +7340,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/white_wall.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/white_wall.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>wall_1_Diffuse</name>
             </script>
           </material>
@@ -7352,7 +7352,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/wall_1.obj</uri>
+              <uri>model://Surfaces/meshes/wall_1.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7379,7 +7379,7 @@
         <visual name='wall_2'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/wall_2.obj</uri>
+              <uri>model://Surfaces/meshes/wall_2.obj</uri>
             </mesh>
           </geometry>
           <transparency>0</transparency>
@@ -7389,11 +7389,11 @@
             <pbr>
               <metal>
                 <metalness>0.0</metalness>
-                <albedo_map>models/pradnicka_office_L1/meshes/wood2.png</albedo_map>
+                <albedo_map>model://Surfaces/meshes/wood2.png</albedo_map>
               </metal>
             </pbr>
             <script>
-              <uri>models/pradnicka_office_L1/meshes/</uri>
+              <uri>model://Surfaces/meshes/</uri>
               <name>wall_2_Diffuse</name>
             </script>
           </material>
@@ -7401,7 +7401,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>models/pradnicka_office_L1/meshes/wall_2.obj</uri>
+              <uri>model://Surfaces/meshes/wall_2.obj</uri>
             </mesh>
           </geometry>
           <surface>
@@ -7719,7 +7719,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='OpenRobotics/ConfTable'>
+      <model name='OpenRobotics/ConferenceTable'>
         <pose>1.46352 -7.98089 0.311675 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
@@ -8667,7 +8667,7 @@
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
-      <model name='pradnicka_office_L1'>
+      <model name='Surfaces'>
         <pose>-1 1 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='floor_1'>

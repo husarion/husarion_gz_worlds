@@ -55,7 +55,7 @@
         <visual name="visual">
           <geometry>
             <mesh>
-              <uri>meshes/husarion_world.dae</uri>
+              <uri>model://HusarionLogo/meshes/husarionLogo.dae</uri>
               <scale>6.0 6.0 6.0</scale>
             </mesh>
           </geometry>
@@ -63,7 +63,7 @@
         <collision name="visual">
           <geometry>
             <mesh>
-              <uri>meshes/husarion_world.dae</uri>
+              <uri>model://HusarionLogo/meshes/husarionLogo.dae</uri>
               <scale>6.0 6.0 6.0</scale>
             </mesh>
           </geometry>
