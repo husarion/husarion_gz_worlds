@@ -33,7 +33,7 @@ ros2 launch husarion_gz_worlds gz_sim.launch.py
 
 **Launch arguments:**
 
-| ARGUMENTS         | DESCRIPTION                                                                                                  | VALUE                                                      |
+| ARGUMENTS         | DESCRIPTION                                                                                                  | DEFAULT VALUE                                              |
 | ----------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
 | **gz_log_level**  | Adjust the verbosity of the console output                                                                   | **1**                                                      |
 | **headless_mode** | Run the simulation in headless mode. Useful when a GUI is not needed or to reduce the amount of calculations | **False**                                                  |
@@ -41,6 +41,11 @@ ros2 launch husarion_gz_worlds gz_sim.launch.py
 
 ### Results
 
-![img1](./images/office1.png)
-![img2](./images/office2.png)
+#### husarion_office.sdf
+
+![img1](./images/husarion_office1.png)
+![img2](./images/husarion_office2.png)
+
+#### husarion_world.sdf
+
 ![img3](./images/husarion_world.png)
