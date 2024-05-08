@@ -20,7 +20,7 @@
         <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
         <geometry>
           <mesh>
-				  	<uri>model://ConferenceTable/meshes/ConferenceTable.stl</uri>
+				  	<uri>model://ConferenceTable/meshes/conference_table.stl</uri>
 				  	<scale>0.016 0.013 0.01</scale>
 				  </mesh>
         </geometry>
@@ -35,7 +35,7 @@
         </material>
         <geometry>
           <mesh>
-				  	<uri>model://ConferenceTable/meshes/ConferenceTable.stl</uri>
+				  	<uri>model://ConferenceTable/meshes/conference_table.stl</uri>
 				  	<scale>0.016 0.013 0.01</scale>
 				  </mesh>
         </geometry>
