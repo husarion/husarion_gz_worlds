@@ -27,7 +27,7 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 
-def launch_setup(context, *args, **kwargs):
+def launch_setup(context):
     gz_log_level = LaunchConfiguration("gz_log_level").perform(context)
     headless_mode = LaunchConfiguration("headless_mode").perform(context)
     world = LaunchConfiguration("world").perform(context)
@@ -38,13 +38,7 @@ def launch_setup(context, *args, **kwargs):
 
     gz_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [
-                    FindPackageShare("ros_gz_sim"),
-                    "launch",
-                    "gz_sim.launch.py",
-                ]
-            )
+            PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])
         ),
         launch_arguments={"gz_args": gz_args}.items(),
     )
@@ -53,8 +47,6 @@ def launch_setup(context, *args, **kwargs):
 
 
 def generate_launch_description():
-    pkg_path = FindPackageShare("husarion_gz_worlds")
-
     declare_gz_log_level = DeclareLaunchArgument(
         "gz_log_level",
         default_value="1",
@@ -71,7 +63,9 @@ def generate_launch_description():
 
     declare_world_arg = DeclareLaunchArgument(
         "world",
-        default_value=PathJoinSubstitution([pkg_path, "worlds", "husarion_world.sdf"]),
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("husarion_gz_worlds"), "worlds", "husarion_world.sdf"]
+        ),
         description="Absolute path to SDF world file.",
     )
 
