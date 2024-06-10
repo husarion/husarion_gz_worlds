@@ -7,6 +7,23 @@
       <real_time_factor>1.0</real_time_factor>
     </physics>
 
+    <plugin filename="ignition-gazebo-contact-system" name="gz::sim::systems::Contact" />
+    <plugin filename="ignition-gazebo-imu-system" name="gz::sim::systems::Imu" />
+    <plugin filename="ignition-gazebo-physics-system" name="gz::sim::systems::Physics" />
+    <plugin filename="ignition-gazebo-scene-broadcaster-system"
+      name="gz::sim::systems::SceneBroadcaster" />
+    <plugin filename="ignition-gazebo-sensors-system" name="gz::sim::systems::Sensors" />
+    <plugin filename="ignition-gazebo-user-commands-system" name="gz::sim::systems::UserCommands" />
+
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <world_frame_orientation>ENU</world_frame_orientation>
+      <latitude_deg>50.088384</latitude_deg>
+      <longitude_deg>19.939128</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+
     <light type="directional" name="sun">
       <cast_shadows>true</cast_shadows>
       <pose>0 0 10 0 0 0</pose>
@@ -69,20 +86,7 @@
           </geometry>
         </collision>
       </link>
-      <plugin filename="ignition-gazebo-imu-system" name="gz::sim::systems::Imu">
-      </plugin>
-      <plugin filename="ignition-gazebo-sensors-system" name="gz::sim::systems::Sensors">
-      </plugin>
     </model>
-
-    <spherical_coordinates>
-      <surface_model>EARTH_WGS84</surface_model>
-      <world_frame_orientation>ENU</world_frame_orientation>
-      <latitude_deg>53.1978</latitude_deg>
-      <longitude_deg>18.3732</longitude_deg>
-      <elevation>0</elevation>
-      <heading_deg>0</heading_deg>
-    </spherical_coordinates>
 
   </world>
 </sdf>
