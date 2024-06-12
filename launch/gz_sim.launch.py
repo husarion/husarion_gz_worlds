@@ -27,24 +27,21 @@ from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 
-def launch_setup(context, *args, **kwargs):
+def launch_setup(context):
+    gz_gui = LaunchConfiguration("gz_gui").perform(context)
     gz_log_level = LaunchConfiguration("gz_log_level").perform(context)
-    headless_mode = LaunchConfiguration("headless_mode").perform(context)
-    world = LaunchConfiguration("world").perform(context)
+    gz_headless_mode = LaunchConfiguration("gz_headless_mode").perform(context)
+    gz_world = LaunchConfiguration("gz_world").perform(context)
 
-    gz_args = f"-r -v {gz_log_level} {world}"
-    if eval(headless_mode):
+    gz_args = f"-r -v {gz_log_level} {gz_world}"
+    if eval(gz_headless_mode):
         gz_args = "--headless-rendering -s " + gz_args
+    if gz_gui:
+        gz_args = f"--gui-config {gz_gui} " + gz_args
 
     gz_sim = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            PathJoinSubstitution(
-                [
-                    FindPackageShare("ros_gz_sim"),
-                    "launch",
-                    "gz_sim.launch.py",
-                ]
-            )
+            PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])
         ),
         launch_arguments={"gz_args": gz_args}.items(),
     )
@@ -53,7 +50,20 @@ def launch_setup(context, *args, **kwargs):
 
 
 def generate_launch_description():
-    pkg_path = FindPackageShare("husarion_gz_worlds")
+    declare_gz_gui = DeclareLaunchArgument(
+        "gz_gui",
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("husarion_gz_worlds"), "config", "teleop.config"]
+        ),
+        description="Run simulation with specific GUI layout.",
+    )
+
+    declare_gz_headless_mode = DeclareLaunchArgument(
+        "gz_headless_mode",
+        default_value="False",
+        description="Run the simulation in headless mode. Useful when a GUI is not needed or to reduce the amount of calculations.",
+        choices=["True", "False"],
+    )
 
     declare_gz_log_level = DeclareLaunchArgument(
         "gz_log_level",
@@ -62,24 +72,20 @@ def generate_launch_description():
         choices=["0", "1", "2", "3", "4"],
     )
 
-    declare_headless_mode = DeclareLaunchArgument(
-        "headless_mode",
-        default_value="False",
-        description="Run the simulation in headless mode. Useful when a GUI is not needed or to reduce the amount of calculations.",
-        choices=["True", "False"],
-    )
-
-    declare_world_arg = DeclareLaunchArgument(
-        "world",
-        default_value=PathJoinSubstitution([pkg_path, "worlds", "husarion_world.sdf"]),
+    declare_gz_world_arg = DeclareLaunchArgument(
+        "gz_world",
+        default_value=PathJoinSubstitution(
+            [FindPackageShare("husarion_gz_worlds"), "worlds", "husarion_world.sdf"]
+        ),
         description="Absolute path to SDF world file.",
     )
 
     return LaunchDescription(
         [
+            declare_gz_gui,
+            declare_gz_headless_mode,
             declare_gz_log_level,
-            declare_headless_mode,
-            declare_world_arg,
+            declare_gz_world_arg,
             OpaqueFunction(function=launch_setup),
         ]
     )
