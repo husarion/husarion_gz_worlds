@@ -72,7 +72,7 @@
           <geometry>
             <plane>
               <normal>0 0 1</normal>
-              <size>50 50</size>
+              <size>15 15</size>
             </plane>
           </geometry>
         </collision>

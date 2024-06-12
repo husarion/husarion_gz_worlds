@@ -33,11 +33,12 @@ ros2 launch husarion_gz_worlds gz_sim.launch.py
 
 **Launch arguments:**
 
-| ARGUMENTS         | DESCRIPTION                                                                                                  | DEFAULT VALUE                                              |
-| ----------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| **gz_log_level**  | Adjust the verbosity of the console output                                                                   | **1**                                                      |
-| **headless_mode** | Run the simulation in headless mode. Useful when a GUI is not needed or to reduce the amount of calculations | **False**                                                  |
-| **world**         | Absolute path to SDF world file                                                                              | **`husarion_gz_worlds/`<br />`worlds/husarion_world.sdf`** |
+| ARGUMENTS            |                                                                                                              | DEFAULT VALUE                                              |
+| -------------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
+| **gz_gui**           | Run simulation with specific GUI layout                                                                      | ****`husarion_gz_worlds/`<br />`config/teleop.config**     |
+| **gz_headless_mode** | Run the simulation in headless mode. Useful when a GUI is not needed or to reduce the amount of calculations | **False**                                                  |
+| **gz_log_level**     | Adjust the level of console output                                                                           | **1**                                                      |
+| **gz_world**         | Absolute path to SDF world file                                                                              | **`husarion_gz_worlds/`<br />`worlds/husarion_world.sdf`** |
 
 ### Results
 
