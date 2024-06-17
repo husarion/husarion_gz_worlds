@@ -24,7 +24,7 @@ repos:
 
     # Python hooks
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.15.2
+    rev: v3.16.0
     hooks:
       - id: pyupgrade
         args: [--py36-plus]
@@ -114,7 +114,7 @@ repos:
 
     # Spellcheck
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.3.0
     hooks:
       - id: codespell
         args: [--write-changes, --uri-ignore-words-list=ist, -L manuel]
