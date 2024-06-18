@@ -29,8 +29,8 @@ from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
 
 def launch_setup(context):
     gz_gui = LaunchConfiguration("gz_gui").perform(context)
-    gz_log_level = LaunchConfiguration("gz_log_level").perform(context)
     gz_headless_mode = LaunchConfiguration("gz_headless_mode").perform(context)
+    gz_log_level = LaunchConfiguration("gz_log_level").perform(context)
     gz_world = LaunchConfiguration("gz_world").perform(context)
 
     gz_args = f"-r -v {gz_log_level} {gz_world}"

@@ -3,10 +3,16 @@
 <package format="3">
   <name>husarion_gz_worlds</name>
   <version>0.0.0</version>
-  <description>Package containing the office model</description>
+  <description>Package containing the gazebo worlds and model</description>
   <maintainer email="support@husarion.com">Husarion</maintainer>
   <license>Apache License 2.0</license>
-  <author email="pawel.kowalski@husarion.com">Pawel Kowalski</author>
+
+  <url type="website">https://husarion.com/</url>
+  <url type="repository">https://github.com/husarion/panther_ros</url>
+  <url type="bugtracker">https://github.com/husarion/panther_ros/issues</url>
+
+  <author email="pawel.kowalski@husarion.com">Paweł Kowalski</author>
+  <author email="rafal.gorecki@husarion.com">Rafał Górecki</author>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
