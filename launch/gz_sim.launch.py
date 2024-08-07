@@ -67,7 +67,7 @@ def generate_launch_description():
 
     declare_gz_log_level = DeclareLaunchArgument(
         "gz_log_level",
-        default_value="1",
+        default_value="2",
         description="Adjust the level of console output.",
         choices=["0", "1", "2", "3", "4"],
     )
