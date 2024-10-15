@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+
+<sdf version="1.6">
+  <model name="WiboticStation">
+    <link name="wibotic_station_base">
+      <visual name="visual">
+        <pose>0 0 0 0 0 1.5708</pose>
+        <geometry>
+          <mesh>
+            <uri>model://WiboticStation/meshes/wibotic_station.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <emissive>0.1 0.1 0.1 1</emissive>
+        </material>
+      </visual>
+
+      <collision name="collision">
+        <pose>-0.2 0.0 0.4 0 0 0</pose>
+        <geometry>
+          <box>
+            <size>0.4 0.5 0.8</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <inertial>
+        <mass>15.0</mass>
+        <pose>-0.2 0 0 0 0 0</pose>
+        <inertia>
+          <ixx>0.001111</ixx>
+          <iyy>0.001111</iyy>
+          <izz>0.001111</izz>
+        </inertia>
+      </inertial>
+    </link>
+
+    <joint name="wibotic_station_base_to_apriltag_joint" type="fixed">
+      <parent>wibotic_station_base</parent>
+      <child>apriltag_link</child>
+    </joint>
+
+    <!-- Apriltag creation -->
+    <link name="apriltag_link">
+      <pose>0 0 0.4 0 0 1.5708</pose>
+      <visual name="apriltag_visual">
+        <geometry>
+          <box>
+            <size>0.15 0.001 0.15</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>1.0 1.0 1.0 1</ambient>
+          <diffuse>1.0 1.0 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
+          <pbr>
+            <metal>
+              <metalness>0.0</metalness>
+              <albedo_map>file://WiboticStation/meshes/tag_201.png</albedo_map>
+            </metal>
+          </pbr>
+        </material>
+      </visual>
+
+      <collision name="apriltag_collision">
+        <pose>0 0 0 0 1.5708 0</pose>
+        <geometry>
+          <box>
+            <size>0.15 0.15 0.0001</size>
+          </box>
+        </geometry>
+      </collision>
+
+      <inertial>
+        <mass>1e-5</mass>
+        <inertia>
+          <ixx>1e-6</ixx>
+          <iyy>1e-6</iyy>
+          <izz>1e-6</izz>
+        </inertia>
+      </inertial>
+    </link>
+
+  </model>
+</sdf>

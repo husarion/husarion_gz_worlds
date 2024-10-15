@@ -84,5 +84,10 @@
       </link>
     </model>
 
+    <include>
+      <uri>model://WiboticStation/model.sdf</uri>
+      <pose>2.5 -2 0 0 0 3.1416</pose>
+    </include>
+
   </world>
 </sdf>
