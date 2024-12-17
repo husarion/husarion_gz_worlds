@@ -43,7 +43,7 @@ def launch_setup(context):
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])
         ),
-        launch_arguments={"gz_args": gz_args}.items(),
+        launch_arguments={"gz_args": gz_args, 'on_exit_shutdown': 'true'}.items()
     )
 
     return [gz_sim]
