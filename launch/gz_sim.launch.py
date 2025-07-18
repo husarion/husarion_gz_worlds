@@ -25,13 +25,24 @@ from launch.actions import (
 )
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
+import os
 
 
 def launch_setup(context):
     gz_gui = LaunchConfiguration("gz_gui").perform(context)
     gz_headless_mode = LaunchConfiguration("gz_headless_mode").perform(context)
     gz_log_level = LaunchConfiguration("gz_log_level").perform(context)
-    gz_world = LaunchConfiguration("gz_world").perform(context)
+    gz_world_param = LaunchConfiguration("gz_world").perform(context)
+
+    # Check if gz_world is a single word (no path separators)
+    # If so, construct the full path to the world file in the husarion_gz_worlds package
+    if os.path.sep not in gz_world_param and '/' not in gz_world_param:
+        # Single word provided - construct the full path
+        husarion_gz_worlds_share = FindPackageShare("husarion_gz_worlds").perform(context)
+        gz_world = os.path.join(husarion_gz_worlds_share, "worlds", f"{gz_world_param}.sdf")
+    else:
+        # Full path provided - use as is
+        gz_world = gz_world_param
 
     gz_args = f"-r -v {gz_log_level} {gz_world}"
     if eval(gz_headless_mode):
@@ -77,7 +88,7 @@ def generate_launch_description():
         default_value=PathJoinSubstitution(
             [FindPackageShare("husarion_gz_worlds"), "worlds", "husarion_world.sdf"]
         ),
-        description="Absolute path to SDF world file.",
+        description="Absolute path to SDF world file, or a single world name (e.g., 'husarion_world') to use from the husarion_gz_worlds/worlds directory.",
     )
 
     return LaunchDescription(
