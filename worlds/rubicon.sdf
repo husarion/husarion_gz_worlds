@@ -42,8 +42,7 @@
     </light>
 
     <include>
-      <!-- <uri>https://fuel.gazebosim.org/1.0/Husarion/models/Rubicon</uri> -->
-       <uri>file:///home/rayferric/Husarion/Source/ugv_ws/src/husarion_gz_worlds/models/Rubicon</uri>
+      <uri>https://fuel.gazebosim.org/1.0/Husarion/models/Rubicon</uri>
     </include>
   </world>
 </sdf>
