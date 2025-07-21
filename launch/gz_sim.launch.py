@@ -15,6 +15,8 @@
 # limitations under the License.
 
 
+import os
+
 from launch_ros.substitutions import FindPackageShare
 
 from launch import LaunchDescription
@@ -25,7 +27,6 @@ from launch.actions import (
 )
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch.substitutions import LaunchConfiguration, PathJoinSubstitution
-import os
 
 
 def launch_setup(context):
@@ -36,7 +37,7 @@ def launch_setup(context):
 
     # Check if gz_world is a single word (no path separators)
     # If so, construct the full path to the world file in the husarion_gz_worlds package
-    if os.path.sep not in gz_world_param and '/' not in gz_world_param:
+    if os.path.sep not in gz_world_param and "/" not in gz_world_param:
         # Single word provided - construct the full path
         husarion_gz_worlds_share = FindPackageShare("husarion_gz_worlds").perform(context)
         gz_world = os.path.join(husarion_gz_worlds_share, "worlds", f"{gz_world_param}.sdf")
@@ -54,7 +55,7 @@ def launch_setup(context):
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])
         ),
-        launch_arguments={"gz_args": gz_args, 'on_exit_shutdown': 'true'}.items()
+        launch_arguments={"gz_args": gz_args, "on_exit_shutdown": "true"}.items(),
     )
 
     return [gz_sim]
