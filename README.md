@@ -38,7 +38,16 @@ ros2 launch husarion_gz_worlds gz_sim.launch.py
 | **gz_gui**           | Run simulation with specific GUI layout                                                                      | **`husarion_gz_worlds/`<br />`config/teleop.config`**     |
 | **gz_headless_mode** | Run the simulation in headless mode. Useful when a GUI is not needed or to reduce the amount of calculations | **False**                                                  |
 | **gz_log_level**     | Adjust the level of console output                                                                           | **1**                                                      |
-| **gz_world**         | Absolute path to SDF world file                                                                              | **`husarion_gz_worlds/`<br />`worlds/husarion_world.sdf`** |
+| **gz_world**         | Absolute path to SDF world file, or the name of a built-in world. (e.g., 'husarion_world')                   | **`husarion_gz_worlds/`<br />`worlds/husarion_world.sdf`** |
+
+**Available built-in worlds:**
+
+- `cave`
+- `empty_with_plugins`
+- `husarion_office`
+- `husarion_world`
+- `rubicon`
+- `sonoma_raceway`
 
 ### Results
 

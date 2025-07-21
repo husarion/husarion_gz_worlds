@@ -27,7 +27,7 @@
     <model name="husarion_world">
       <static>true</static>
       <link name="mesh">
-        <pose>13.0 16.0 0 0 0 -1.57</pose>
+        <pose>13.0 18.0 0 0 0 -1.57</pose>
         <visual name="visual">
           <geometry>
             <mesh>

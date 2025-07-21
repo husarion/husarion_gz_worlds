@@ -15,6 +15,8 @@
 # limitations under the License.
 
 
+import os
+
 from launch_ros.substitutions import FindPackageShare
 
 from launch import LaunchDescription
@@ -31,7 +33,13 @@ def launch_setup(context):
     gz_gui = LaunchConfiguration("gz_gui").perform(context)
     gz_headless_mode = LaunchConfiguration("gz_headless_mode").perform(context)
     gz_log_level = LaunchConfiguration("gz_log_level").perform(context)
-    gz_world = LaunchConfiguration("gz_world").perform(context)
+    gz_world_param = LaunchConfiguration("gz_world").perform(context)
+
+    if os.path.sep not in gz_world_param and "/" not in gz_world_param:
+        husarion_gz_worlds_share = FindPackageShare("husarion_gz_worlds").perform(context)
+        gz_world = os.path.join(husarion_gz_worlds_share, "worlds", f"{gz_world_param}.sdf")
+    else:
+        gz_world = gz_world_param
 
     gz_args = f"-r -v {gz_log_level} {gz_world}"
     if eval(gz_headless_mode):
@@ -43,7 +51,7 @@ def launch_setup(context):
         PythonLaunchDescriptionSource(
             PathJoinSubstitution([FindPackageShare("ros_gz_sim"), "launch", "gz_sim.launch.py"])
         ),
-        launch_arguments={"gz_args": gz_args, 'on_exit_shutdown': 'true'}.items()
+        launch_arguments={"gz_args": gz_args, "on_exit_shutdown": "true"}.items(),
     )
 
     return [gz_sim]
@@ -77,7 +85,7 @@ def generate_launch_description():
         default_value=PathJoinSubstitution(
             [FindPackageShare("husarion_gz_worlds"), "worlds", "husarion_world.sdf"]
         ),
-        description="Absolute path to SDF world file.",
+        description="Absolute path to SDF world file, or a single world name (e.g., 'husarion_world') to use from the husarion_gz_worlds/worlds directory.",
     )
 
     return LaunchDescription(

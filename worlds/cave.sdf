@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 <sdf version='1.6'>
-  <world name='sonoma'>
+  <world name='rubicon'>
     <physics name="5ms" type="ignored">
       <max_step_size>0.005</max_step_size>
       <real_time_factor>1.0</real_time_factor>
@@ -20,8 +20,8 @@
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
-      <latitude_deg>38.161410</latitude_deg>
-      <longitude_deg>-122.454530</longitude_deg>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
       <elevation>0</elevation>
       <heading_deg>0</heading_deg>
     </spherical_coordinates>
@@ -42,9 +42,8 @@
     </light>
 
     <include>
-      <pose>-290 142 -7.4 0 0 0</pose>
-      <uri>https://fuel.ignitionrobotics.org/1.0/openrobotics/models/Sonoma Raceway</uri>
+      <pose>-3 -10 -0.3 0 0 0</pose>
+      <uri>https://fuel.gazebosim.org/1.0/OpenRobotics/models/Cave</uri>
     </include>
-
   </world>
 </sdf>
