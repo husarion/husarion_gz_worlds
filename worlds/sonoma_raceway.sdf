@@ -2,7 +2,7 @@
 <sdf version='1.6'>
   <world name='sonoma'>
     <physics name="5ms" type="ignored">
-      <max_step_size>0.005</max_step_size>
+      <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
     </physics>
     <scene>

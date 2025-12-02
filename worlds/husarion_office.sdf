@@ -2,9 +2,10 @@
 
 <sdf version='1.6'>
   <world name='husarion_office'>
-    <physics name="1ms" type="ignored">
-      <max_step_size>0.001</max_step_size>
-      <real_time_factor>1.0</real_time_factor>
+    <physics type='ode'>
+      <max_step_size>0.004</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
     </physics>
 
     <plugin filename="gz-sim-contact-system" name="gz::sim::systems::Contact" />
@@ -7493,11 +7494,6 @@
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
-    <physics type='ode'>
-      <max_step_size>0.001</max_step_size>
-      <real_time_factor>1</real_time_factor>
-      <real_time_update_rate>1000</real_time_update_rate>
-    </physics>
     <wind/>
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
