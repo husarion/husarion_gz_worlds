@@ -2,8 +2,8 @@
 Changelog for package husarion_gz_worlds
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.1.0 (2026-06-22)
+------------------
 * Add on exit shutdown
 * Mapped Husarion World (`#10 <https://github.com/husarion/husarion_gz_worlds/issues/10>`_)
   * Added maps from slamtoolbox
