@@ -36,7 +36,7 @@
             </mesh>
           </geometry>
         </visual>
-        <collision name="visual">
+        <collision name="collision">
           <geometry>
             <mesh>
               <uri>model://HusarionLogo/meshes/husarion_logo.dae</uri>
